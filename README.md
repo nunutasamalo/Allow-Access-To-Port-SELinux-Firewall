@@ -2,6 +2,7 @@ Allow-Access-To-Port-SELinux-Firewall
 To allow access to port 9443
 --------------------------------------
 Start with checking the port allocation and confirming the port you want to allow access to isn't already being used
+
 #sudo semanage port -l | grep http_port_t
 Allow access to port
 #sudo semanage port -a -t http_port_t -p tcp 9443
